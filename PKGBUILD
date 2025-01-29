@@ -7,8 +7,8 @@ _offline="false"
 _git="false"
 _pkg=videogame-launcher
 pkgname="${_pkg}"
-pkgver="0.0.0.0.0.0.0.0.0.0.0.1"
-_commit="6f395c2af38ced4c6cf8dc9c7338d249ad81731c"
+pkgver="0.0.0.0.0.0.0.0.0.0.0.1.1"
+_commit="88cfaa210b683af85bd92b9cfe4440232da8ec28"
 pkgrel=1
 _pkgdesc=(
   "Seamlessly launch videogames"
@@ -29,7 +29,9 @@ depends=(
 )
 optdepends=()
 optdepends+=(
-  "duckstation: launch videogames with duckstation"
+  "duckstation: launch PlayStation videogames with duckstation"
+  "fceux: launch Nintendo Entertainment System videogames with fceux"
+  "retroarch: launch videogames with retroarch"
 )
 makedepends=(
   'make'
@@ -56,7 +58,7 @@ elif [[ "${_git}" == false ]]; then
     _sum="d4f4179c6e4ce1702c5fe6af132669e8ec4d0378428f69518f2926b969663a91"
   elif [[ "${_tag_name}" == "commit" ]]; then
     _src="${_tarname}.zip::${_url}/archive/${_commit}.zip"
-    _sum='3ce132c314b4dc150abd7c5e559bcffa74c271628724112fc73ef0370b99a972'
+    _sum='910916d358dacc315d8f5210fddf99d3c128540f7124d3bf955cbd1fb4736f04'
   fi
 fi
 source=(
