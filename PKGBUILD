@@ -59,8 +59,8 @@ if [[ "${_docs}" == "true" ]]; then
     "${pkgbase}-docs"
   )
 fi
-pkgver="0.0.0.0.0.0.0.0.0.0.0.1.1.1.1"
-_commit="ca35328481a12e36fcf024532a955c1a591c6061"
+pkgver="0.0.0.0.0.0.0.0.0.0.0.1.1.1.1.1.1"
+_commit="85ea7748bac0d7f25694c537297aac82a2252e15"
 pkgrel=1
 _pkgdesc=(
   "Seamlessly launch videogames"
@@ -150,10 +150,10 @@ fi
 _evmfs_network="100"
 _evmfs_address="0x69470b18f8b8b5f92b48f6199dcb147b4be96571"
 _evmfs_ns="0x6E5163fC4BFc1511Dbe06bB605cc14a3e462332b"
-_archive_sum='c3afa76d447384917b028c0c8d75081a2f7febbb9c694691c85e51864e83f8bc'
+_archive_sum="1ee292149106855af1931d279821601762536df64b5c07c409c4d5d023ed56be"
 _evmfs_archive_uri="evmfs://${_evmfs_network}/${_evmfs_address}/${_evmfs_ns}/${_archive_sum}"
 _evmfs_archive_src="${_tarname}.tar.xz::${_evmfs_archive_uri}"
-_archive_sig_sum="f95a85162b263dd13b16afa7311a56313ffe0cb349b126245b33defca00202fd"
+_archive_sig_sum="dfdf1d2cb63dda425e25d53aad931926b842d5b424c39302d16646fefd2c813e"
 _archive_sig_uri="evmfs://${_evmfs_network}/${_evmfs_address}/${_evmfs_ns}/${_archive_sig_sum}"
 _archive_sig_src="${_tarname}.tar.xz.sig::${_archive_sig_uri}"
 if [[ "${_evmfs}" == true ]]; then
@@ -250,3 +250,4 @@ package_videogame-launcher-docs() {
 
 # vim:set sw=2 sts=-1 et:
 
+sha256sums=('1ee292149106855af1931d279821601762536df64b5c07c409c4d5d023ed56be')
