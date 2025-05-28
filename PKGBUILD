@@ -19,10 +19,14 @@
 #    You should have received a copy of the GNU Affero General Public License
 #    along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-# Maintainer: Truocolo <truocolo@aol.com>
-# Maintainer: Truocolo <truocolo@0x6E5163fC4BFc1511Dbe06bB605cc14a3e462332b>
-# Maintainer: Pellegrino Prevete (dvorak) <pellegrinoprevete@gmail.com>
-# Maintainer: Pellegrino Prevete (dvorak) <dvorak@0x87003Bd6C074C713783df04f36517451fF34CBEf>
+# Maintainer:
+#   Truocolo
+#     <truocolo@aol.com>
+#     <truocolo@0x6E5163fC4BFc1511Dbe06bB605cc14a3e462332b>
+# Maintainer:
+#   Pellegrino Prevete (dvorak)
+#     <pellegrinoprevete@gmail.com>
+#     <dvorak@0x87003Bd6C074C713783df04f36517451fF34CBEf>
 
 _evmfs_available="$( \
   command \
@@ -59,8 +63,8 @@ if [[ "${_docs}" == "true" ]]; then
     "${pkgbase}-docs"
   )
 fi
-pkgver="0.0.0.0.0.0.0.0.0.0.0.1.1.1.1.1.1"
-_commit="85ea7748bac0d7f25694c537297aac82a2252e15"
+pkgver="0.0.0.0.0.0.0.0.0.0.0.1.1.1.1.1.1.1"
+_commit="a58d298255aa3213493714cda35a779b67b3a418"
 pkgrel=1
 _pkgdesc=(
   "Seamlessly launch videogames"
@@ -128,6 +132,23 @@ _retroarch_optdepends=(
     "launch videogames"
     "with RetroArch."
 )
+_retroarch_nintendo64_optdepends=(
+  "libretro-mupen64plus-next:"
+    "launch Nintendo 64"
+    "videogames"
+    "with RetroArch."
+)
+_retroarch_scummvm_optdepends=(
+  "libretro-scummvm:"
+    "launch SCUMMVM"
+    "videogames"
+    "with RetroArch."
+)
+_scummvm_optdepends=(
+  "scummvm:"
+    "launch SCUMMVM"
+    "videogames."
+)
 optdepends+=(
   "${_duckstation_optdepends[*]}"
   "${_fceux_optdepends[*]}"
@@ -136,6 +157,8 @@ optdepends+=(
   "${_pcsx2_17_optdepends[*]}"
   "${_pcsx2_optdepends[*]}"
   "${_retroarch_optdepends[*]}"
+  "${_retroarch_nintendo64_optdepends[*]}"
+  "${_scummvm_optdepends[*]}"
 )
 source=()
 sha256sums=()
@@ -150,10 +173,10 @@ fi
 _evmfs_network="100"
 _evmfs_address="0x69470b18f8b8b5f92b48f6199dcb147b4be96571"
 _evmfs_ns="0x6E5163fC4BFc1511Dbe06bB605cc14a3e462332b"
-_archive_sum="1ee292149106855af1931d279821601762536df64b5c07c409c4d5d023ed56be"
+_archive_sum='931c84e96e4b30f3e42e29729a86c802f1620e35b433b6be89f3e878ebfb0f4a'
 _evmfs_archive_uri="evmfs://${_evmfs_network}/${_evmfs_address}/${_evmfs_ns}/${_archive_sum}"
 _evmfs_archive_src="${_tarname}.tar.xz::${_evmfs_archive_uri}"
-_archive_sig_sum="dfdf1d2cb63dda425e25d53aad931926b842d5b424c39302d16646fefd2c813e"
+_archive_sig_sum="773a54eab58c6e449e047eca2708eb4b4e721f536aa0bf41eb4ce54b5b549e90"
 _archive_sig_uri="evmfs://${_evmfs_network}/${_evmfs_address}/${_evmfs_ns}/${_archive_sig_sum}"
 _archive_sig_src="${_tarname}.tar.xz.sig::${_archive_sig_uri}"
 if [[ "${_evmfs}" == true ]]; then
@@ -249,5 +272,3 @@ package_videogame-launcher-docs() {
 }
 
 # vim:set sw=2 sts=-1 et:
-
-sha256sums=('1ee292149106855af1931d279821601762536df64b5c07c409c4d5d023ed56be')
