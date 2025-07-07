@@ -63,8 +63,8 @@ if [[ "${_docs}" == "true" ]]; then
     "${pkgbase}-docs"
   )
 fi
-pkgver="0.0.0.0.0.0.0.0.0.0.0.1.1.1.1.1.1.1"
-_commit="a58d298255aa3213493714cda35a779b67b3a418"
+pkgver="0.0.0.0.0.0.0.0.0.0.0.1.1.1.1.1.1.1.1.1"
+_commit="4ed5c6e6f4ec299bd26d15d45edcd829c039fa83"
 pkgrel=1
 _pkgdesc=(
   "Seamlessly launch videogames"
