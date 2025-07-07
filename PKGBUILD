@@ -172,8 +172,9 @@ if [[ "${_offline}" == "true" ]]; then
 fi
 _evmfs_network="100"
 _evmfs_address="0x69470b18f8b8b5f92b48f6199dcb147b4be96571"
-_evmfs_ns="0x6E5163fC4BFc1511Dbe06bB605cc14a3e462332b"
+_evmfs_ns="0x87003Bd6C074C713783df04f36517451fF34CBEf"
 _archive_sum="c3afa76d447384917b028c0c8d75081a2f7febbb9c694691c85e51864e83f8bc"
+_archive_sum="ae77cfafb7f3532e17721368399b1e80dff68f14fc15d319f89522b451f44d36"
 _evmfs_archive_uri="evmfs://${_evmfs_network}/${_evmfs_address}/${_evmfs_ns}/${_archive_sum}"
 _evmfs_archive_src="${_tarname}.tar.xz::${_evmfs_archive_uri}"
 _archive_sig_sum="cde6e4aace6a1e0cc6cd8fb899209456379a3c1ae6f938703a3729d16e5f7e36"
