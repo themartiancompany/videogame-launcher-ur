@@ -94,36 +94,44 @@ fi
 checkdepends=(
   "shellcheck"
 )
+_doomretro_optdepends=(
+  "doomretro:"
+    "Support for launching"
+    "Doom and Doom-engine"
+    "based videogames."
+)
 _duckstation_optdepends=(
   "duckstation:"
-    "launch PlayStation videogames"
+    "Support for launching"
+    "PlayStation videogames"
     "with Duckstation."
 )
 _fceux_optdepends=(
   "fceux:"
-    "launch Nintendo Entertainment"
-    "System videogames with FCEUX."
+    "Support for launching Nintendo"
+    "Entertainment System videogames"
+    "with FCEUX."
 )
 _gearboy_optdepends=(
   "gearboy:"
-    "launch GameBoy videogames"
-    "with Gearboy."
+    "Support for launching GameBoy"
+    "videogames with Gearboy."
 )
 _pcsx2_16_optdepends=(
   "pcsx2-1.6:"
-    "launch PlayStation 2"
+    "Support for launching PlayStation 2"
     "videogames with PCSX2>=1.6.x"
     "(>=SSE2 CPUs)."
 )
 _pcsx2_17_optdepends=(
   "pcsx2-1.7:"
-    "launch PlayStation 2"
+    "Support for launching PlayStation 2"
     "videogames with PCSX2>=1.7.x"
     "(>=SSE3 CPUs)."
 )
 _pcsx2_optdepends=(
   "pcsx2:"
-    "launch PlayStation 2"
+    "Support for launching PlayStation 2"
     "videogames with PCSX2"
     "(>=SSE4 CPUs)."
 )
@@ -132,22 +140,41 @@ _retroarch_optdepends=(
     "launch videogames"
     "with RetroArch."
 )
+_retroarch_doom_optdepends=(
+  "libretro-prboom:"
+    "Support for launching"
+    "Nintendo 64 videogames"
+    "with RetroArch."
+)
 _retroarch_nintendo64_optdepends=(
   "libretro-mupen64plus-next:"
-    "launch Nintendo 64"
-    "videogames"
+    "Support for launching"
+    "Nintendo 64 videogames"
+    "with RetroArch."
+)
+_retroarch_pcsx_rearmed_optdepends=(
+  "libretro-pcsx-rearmed:"
+    "Support for launching"
+    "PlayStation videogames"
+    "with RetroArch PCSX"
+    "ReARMed core."
+)
+_retroarch_quicknes_optdepends=(
+  "libretro-quicknes:"
+    "Support for launching"
+    "Nintendo Entertainment"
+    "System videogames"
     "with RetroArch."
 )
 _retroarch_scummvm_optdepends=(
   "libretro-scummvm:"
-    "launch SCUMMVM"
-    "videogames"
-    "with RetroArch."
+    "Support for launching SCUMMVM"
+    "videogames with RetroArch."
 )
 _scummvm_optdepends=(
   "scummvm:"
-    "launch SCUMMVM"
-    "videogames."
+    "Support for launching"
+    "videogames with SCUMMVM."
 )
 optdepends+=(
   "${_duckstation_optdepends[*]}"
@@ -157,7 +184,11 @@ optdepends+=(
   "${_pcsx2_17_optdepends[*]}"
   "${_pcsx2_optdepends[*]}"
   "${_retroarch_optdepends[*]}"
+  "${_retroarch_doom_optdepends[*]}"
   "${_retroarch_nintendo64_optdepends[*]}"
+  "${_retroarch_quicknes_optdepends[*]}"
+  "${_retroarch_pcsx_rearmed_optdepends[*]}"
+  "${_retroarch_scummvm_optdepends[*]}"
   "${_scummvm_optdepends[*]}"
 )
 source=()
