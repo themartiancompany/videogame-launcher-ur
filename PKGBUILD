@@ -81,7 +81,9 @@ license=(
   'AGPL3'
 )
 depends=(
+  "coreutils"
   "libcrash-bash"
+  "sed"
 )
 makedepends=(
   'make'
