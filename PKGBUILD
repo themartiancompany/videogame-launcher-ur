@@ -46,6 +46,9 @@ fi
 if [[ ! -v "_git" ]]; then
   _git="false"
 fi
+if [[ ! -v "_mirror_type" ]]; then
+  _mirror_type="public"
+fi
 if [[ ! -v "_offline" ]]; then
   _offline="false"
 fi
@@ -63,8 +66,8 @@ if [[ "${_docs}" == "true" ]]; then
     "${pkgbase}-docs"
   )
 fi
-pkgver="0.0.0.0.0.0.0.0.0.0.0.1.1.1.1.1.1.1.1.1"
-_commit="4ed5c6e6f4ec299bd26d15d45edcd829c039fa83"
+pkgver="0.0.0.0.0.0.0.0.0.0.0.1.1.1.1.1.1.1.1.1.1"
+_commit="4597e8106d136362e1d63c79ab16f98820fadd39"
 pkgrel=1
 _pkgdesc=(
   "Seamlessly launch videogames"
@@ -74,7 +77,11 @@ pkgdesc="${_pkgdesc[*]}"
 arch=(
   'any'
 )
-_http="https://github.com"
+if [[ "${_mirror_type}" == "public" ]]; then
+  _http="https://github.com"
+elif [[ "${_mirror_type}" == "private" ]]; then
+  _http="https://gitlab.com"
+fi
 _ns="themartiancompany"
 url="${_http}/${_ns}/${pkgname}"
 license=(
@@ -237,7 +244,11 @@ elif [[ "${_git}" == false ]]; then
     _sum="d4f4179c6e4ce1702c5fe6af132669e8ec4d0378428f69518f2926b969663a91"
     _sum="Who cares, fetching stuff using tags with git is unsecure."
   elif [[ "${_tag_name}" == "commit" ]]; then
-    _src="${_tarname}.zip::${_url}/archive/${_commit}.zip"
+    if [[ "${_mirror_type}" == "public" ]]; then
+      _src="${_tarname}.zip::${_url}/archive/${_commit}.zip"
+    elif [[ "${_mirror_type}" == "private" ]]; then
+      _src="${_tarname}.tar.gz::${_url}/-/archive/${pkgver}/${_pkg}-${pkgver}.tar.gz"
+    fi
     _sum="${_archive_sum}"
   fi
 fi
