@@ -121,6 +121,12 @@ _fceux_optdepends=(
     "Entertainment System videogames"
     "with FCEUX."
 )
+_flycast_optdepends=(
+  "flycast:"
+    "Support for launching Sega"
+    "Dreamcast videogames"
+    "with Flycast."
+)
 _gearboy_optdepends=(
   "gearboy:"
     "Support for launching GameBoy"
@@ -152,7 +158,13 @@ _retroarch_optdepends=(
 _retroarch_doom_optdepends=(
   "libretro-prboom:"
     "Support for launching"
-    "Nintendo 64 videogames"
+    "Doom engine videogames"
+    "with PrBoom Retroarch core."
+)
+_retroarch_flycast_optdepends=(
+  "libretro-flycast:"
+    "Support for launching"
+    "Sega Dreamcast videogames"
     "with RetroArch."
 )
 _retroarch_nintendo64_optdepends=(
@@ -186,7 +198,9 @@ _scummvm_optdepends=(
     "videogames with SCUMMVM."
 )
 optdepends+=(
+  "${_doomretro_optdepends[*]}"
   "${_duckstation_optdepends[*]}"
+  "${_flycast_optdepends[*]}"
   "${_fceux_optdepends[*]}"
   "${_gearboy_optdepends[*]}"
   "${_pcsx2_16_optdepends[*]}"
@@ -194,6 +208,7 @@ optdepends+=(
   "${_pcsx2_optdepends[*]}"
   "${_retroarch_optdepends[*]}"
   "${_retroarch_doom_optdepends[*]}"
+  "${_retroarch_flycast_optdepends[*]}"
   "${_retroarch_nintendo64_optdepends[*]}"
   "${_retroarch_quicknes_optdepends[*]}"
   "${_retroarch_pcsx_rearmed_optdepends[*]}"
