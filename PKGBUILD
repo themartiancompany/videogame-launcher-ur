@@ -66,8 +66,8 @@ if [[ "${_docs}" == "true" ]]; then
     "${pkgbase}-docs"
   )
 fi
-pkgver="0.0.0.0.0.0.0.0.0.0.1"
-_commit="daffee43ba5d2aa14446af0d3932c523a5b2bf4a"
+pkgver="0.0.0.0.0.0.0.0.0.0.1.1"
+_commit="93b2ae5813e9d62c5f937ae497bf208a46a4b03d"
 pkgrel=1
 _pkgdesc=(
   "Seamlessly launch videogames"
@@ -109,6 +109,11 @@ _doomretro_optdepends=(
     "Doom and Doom-engine"
     "based videogames."
 )
+_dosbox_optdepends=(
+  "dosbox:"
+    "Support for launching"
+    "DOS videogames."
+)
 _duckstation_optdepends=(
   "duckstation:"
     "Support for launching"
@@ -119,6 +124,12 @@ _fceux_optdepends=(
   "fceux:"
     "Support for launching Nintendo"
     "Entertainment System videogames"
+    "with FCEUX."
+)
+_famicom_bios_optdepends=(
+  "famicom-bios:"
+    "Support for launching Nintendo"
+    "FamiCom videogames"
     "with FCEUX."
 )
 _flycast_optdepends=(
@@ -161,6 +172,13 @@ _retroarch_doom_optdepends=(
     "Doom engine videogames"
     "with PrBoom Retroarch core."
 )
+_retroarch_dosbox_optdepends=(
+  "libretro-dosbox-pure:"
+    "Support for launching"
+    "DOS videogames"
+    "with DOSBox Pure"
+    "Retroarch core."
+)
 _retroarch_flycast_optdepends=(
   "libretro-flycast:"
     "Support for launching"
@@ -187,6 +205,13 @@ _retroarch_quicknes_optdepends=(
     "System videogames"
     "with RetroArch."
 )
+_retroarch_snes9x_optdepends=(
+  "libretro-snes9x:"
+    "Support for launching"
+    "Super Nintendo Entertainment"
+    "System videogames"
+    "with RetroArch."
+)
 _retroarch_scummvm_optdepends=(
   "libretro-scummvm:"
     "Support for launching SCUMMVM"
@@ -197,23 +222,35 @@ _scummvm_optdepends=(
     "Support for launching"
     "videogames with SCUMMVM."
 )
+_snes9x_optdepends=(
+  "snes9x:"
+    "Support for launching"
+    "Super Nintendo Entertainment"
+    "System videogames"
+    "with SNES9x."
+)
 optdepends+=(
   "${_doomretro_optdepends[*]}"
+  "${_dosbox_optdepends[*]}"
   "${_duckstation_optdepends[*]}"
   "${_flycast_optdepends[*]}"
   "${_fceux_optdepends[*]}"
+  "${_famicom_bios_optdepends[*]}"
   "${_gearboy_optdepends[*]}"
   "${_pcsx2_16_optdepends[*]}"
   "${_pcsx2_17_optdepends[*]}"
   "${_pcsx2_optdepends[*]}"
   "${_retroarch_optdepends[*]}"
   "${_retroarch_doom_optdepends[*]}"
+  "${_retroarch_dosbox_optdepends[*]}"
   "${_retroarch_flycast_optdepends[*]}"
   "${_retroarch_nintendo64_optdepends[*]}"
   "${_retroarch_quicknes_optdepends[*]}"
   "${_retroarch_pcsx_rearmed_optdepends[*]}"
   "${_retroarch_scummvm_optdepends[*]}"
+  "${_retroarch_snes9x_optdepends[*]}"
   "${_scummvm_optdepends[*]}"
+  "${_snes9x_optdepends[*]}"
 )
 source=()
 sha256sums=()
@@ -225,8 +262,8 @@ if [[ "${_offline}" == "true" ]]; then
   _url="file://${HOME}/${_pkg}"
   _tarname="${_pkg}"
 fi
-_archive_sum="0d8d1804d288aa8124dc38ab3e3d9530efe9d88bceec2c14e94d7df3d115a385"
-_archive_sig_sum="1556ceef35663b7321a5b386afbbed3ff12cb67478238aa9e1698d65eeb83fcc"
+_archive_sum="e9e022846a7c46d2b0f7e44521880248eb23e9075e2bba0e0eb67bf89633846b"
+_archive_sig_sum="317bb7be2f06e4d6da93d948e0bfcf23c237e741702e337e0e7de9624aff42c8"
 _evmfs_ns="0x87003Bd6C074C713783df04f36517451fF34CBEf"
 _evmfs_network="100"
 _evmfs_address="0x69470b18f8b8b5f92b48f6199dcb147b4be96571"
