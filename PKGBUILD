@@ -67,7 +67,7 @@ if [[ "${_docs}" == "true" ]]; then
   )
 fi
 pkgver="0.0.0.0.0.0.0.0.0.0.1.1"
-_commit="93b2ae5813e9d62c5f937ae497bf208a46a4b03d"
+_commit="34f030f2d019813ffc999e54bc9a606370a95f3e"
 pkgrel=1
 _pkgdesc=(
   "Seamlessly launch videogames"
@@ -269,8 +269,9 @@ if [[ "${_offline}" == "true" ]]; then
   _url="file://${HOME}/${_pkg}"
   _tarname="${_pkg}"
 fi
-_archive_sum="e9e022846a7c46d2b0f7e44521880248eb23e9075e2bba0e0eb67bf89633846b"
+_archive_sum="9053f7a6bc6ae5a012422823736354765a48ee0f52af51dce0c9d0d0eb5b62e1"
 _archive_sig_sum="317bb7be2f06e4d6da93d948e0bfcf23c237e741702e337e0e7de9624aff42c8"
+_archive_sig_sum="58d8ec35f30e29ddd30510c9a05e3d1c322f3800587717ee384b883ecfe9c414"
 _evmfs_ns="0x87003Bd6C074C713783df04f36517451fF34CBEf"
 _evmfs_network="100"
 _evmfs_address="0x69470b18f8b8b5f92b48f6199dcb147b4be96571"
