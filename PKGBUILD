@@ -179,6 +179,12 @@ _retroarch_dosbox_optdepends=(
     "with DOSBox Pure"
     "Retroarch core."
 )
+_retroarch_fceumm_optdepends=(
+  "libretro-fceumm:"
+    "Support for launching"
+    "Nintendo FamiCom videogames"
+    "with RetroArch."
+)
 _retroarch_flycast_optdepends=(
   "libretro-flycast:"
     "Support for launching"
@@ -243,6 +249,7 @@ optdepends+=(
   "${_retroarch_optdepends[*]}"
   "${_retroarch_doom_optdepends[*]}"
   "${_retroarch_dosbox_optdepends[*]}"
+  "${_retroarch_fceumm_optdepends[*]}"
   "${_retroarch_flycast_optdepends[*]}"
   "${_retroarch_nintendo64_optdepends[*]}"
   "${_retroarch_quicknes_optdepends[*]}"
