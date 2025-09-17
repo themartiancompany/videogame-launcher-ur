@@ -23,7 +23,6 @@
 #   Truocolo
 #     <truocolo@aol.com>
 #     <truocolo@0x6E5163fC4BFc1511Dbe06bB605cc14a3e462332b>
-# Maintainer:
 #   Pellegrino Prevete (dvorak)
 #     <pellegrinoprevete@gmail.com>
 #     <dvorak@0x87003Bd6C074C713783df04f36517451fF34CBEf>
@@ -66,8 +65,8 @@ if [[ "${_docs}" == "true" ]]; then
     "${pkgbase}-docs"
   )
 fi
-pkgver="0.0.0.0.0.0.0.0.0.0.1.1"
-_commit="c92897463ace7ebc654588fbd02298f08b158cf4"
+pkgver="0.0.0.0.0.0.0.0.0.0.1.1.1"
+_commit="bfba45b652c587e09fa1ae91320c2e5007b3c96b"
 pkgrel=2
 _pkgdesc=(
   "Seamlessly launch videogames"
@@ -269,8 +268,8 @@ if [[ "${_offline}" == "true" ]]; then
   _url="file://${HOME}/${_pkg}"
   _tarname="${_pkg}"
 fi
-_archive_sum="0557017de2c699285bd761ed2d56f80d389266759e612856d80a91a9ad2e2a9f"
-_archive_sig_sum="d69bb12e82e40299ab1e322d22ac7ccb45a86beb243b3d4ea7308ccff566d785"
+_archive_sum="33b6a307a793f0838011109ef8b580379bdc062dce28e660dfc2691280a786a3"
+_archive_sig_sum="020d7e365730d505525be1b92860a9f71ea47cf68af8b3d67a91ae362f930557"
 _evmfs_ns="0x87003Bd6C074C713783df04f36517451fF34CBEf"
 _evmfs_network="100"
 _evmfs_address="0x69470b18f8b8b5f92b48f6199dcb147b4be96571"
