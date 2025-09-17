@@ -66,7 +66,7 @@ if [[ "${_docs}" == "true" ]]; then
   )
 fi
 pkgver="0.0.0.0.0.0.0.0.0.0.1.1.1"
-_commit="bfba45b652c587e09fa1ae91320c2e5007b3c96b"
+_commit="09ba7c680d509bff7388f443e12be78cc13c505b"
 pkgrel=2
 _pkgdesc=(
   "Seamlessly launch videogames"
