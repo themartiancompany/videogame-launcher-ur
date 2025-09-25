@@ -270,7 +270,6 @@ if [[ "${_offline}" == "true" ]]; then
 fi
 _archive_sum="9a7ec6fe4fa96c457410cf45d5d93732dee0b1f14f5681cb8654097a95f56d72"
 _archive_sig_sum="4b7117b3f05e3b65d03154903fd89f4a557dff428bad06b31551e62ab2a2ba02"
-_archive_sig_sum="9f721528d5321d88efc7f5c1611c75e1454ba0e9d483b136f5cb2d089bc45ce5"
 _evmfs_ns="0x87003Bd6C074C713783df04f36517451fF34CBEf"
 _evmfs_network="100"
 _evmfs_address="0x69470b18f8b8b5f92b48f6199dcb147b4be96571"
