@@ -143,7 +143,7 @@ _flycast_optdepends=(
     "Dreamcast videogames"
     "with Flycast."
 )
-_fs-uae_optdepends=(
+_fs_uae_optdepends=(
   "fs-uae:"
     "Support for launching Amiga"
     "videogames"
@@ -251,7 +251,7 @@ optdepends+=(
   "${_dosbox_optdepends[*]}"
   "${_duckstation_optdepends[*]}"
   "${_flycast_optdepends[*]}"
-  "${_fs-uae_optdepends[*]}"
+  "${_fs_uae_optdepends[*]}"
   "${_fceux_optdepends[*]}"
   "${_famicom_bios_optdepends[*]}"
   "${_gearboy_optdepends[*]}"
