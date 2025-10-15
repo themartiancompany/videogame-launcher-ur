@@ -65,8 +65,8 @@ if [[ "${_docs}" == "true" ]]; then
     "${pkgbase}-docs"
   )
 fi
-pkgver="0.0.0.0.0.0.0.0.0.0.1.1.1.1"
-_commit="ded8f868f8fba6d54d6c7454a6e98833e9f9b08c"
+pkgver="0.0.0.0.0.0.0.0.0.0.1.1.1.1.1"
+_commit="ef08339f9107e2aea1ae25f606f23ed3e1af480f"
 pkgrel=1
 _pkgdesc=(
   "Seamlessly launch videogames"
@@ -102,6 +102,12 @@ fi
 checkdepends=(
   "shellcheck"
 )
+_cyberstorm_optdepends=(
+  "cyberstorm:"
+    "Support for launching Amiga"
+    "with the CyberStorm"
+    "graphic card."
+)
 _doomretro_optdepends=(
   "doomretro:"
     "Support for launching"
@@ -136,6 +142,12 @@ _flycast_optdepends=(
     "Support for launching Sega"
     "Dreamcast videogames"
     "with Flycast."
+)
+_fs-uae_optdepends=(
+  "fs-uae:"
+    "Support for launching Amiga"
+    "videogames"
+    "with FS UAE."
 )
 _gearboy_optdepends=(
   "gearboy:"
@@ -239,6 +251,7 @@ optdepends+=(
   "${_dosbox_optdepends[*]}"
   "${_duckstation_optdepends[*]}"
   "${_flycast_optdepends[*]}"
+  "${_fs-uae_optdepends[*]}"
   "${_fceux_optdepends[*]}"
   "${_famicom_bios_optdepends[*]}"
   "${_gearboy_optdepends[*]}"
