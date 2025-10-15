@@ -247,6 +247,7 @@ _snes9x_optdepends=(
     "with SNES9x."
 )
 optdepends+=(
+  "${_cyberstorm_optdepends[*]}"
   "${_doomretro_optdepends[*]}"
   "${_dosbox_optdepends[*]}"
   "${_duckstation_optdepends[*]}"
