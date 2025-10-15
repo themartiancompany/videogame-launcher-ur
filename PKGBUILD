@@ -382,6 +382,7 @@ package_videogame-launcher-docs() {
     DESTDIR="${pkgdir}"
     PREFIX='/usr'
   )
+  optdepends=()
   cd \
     "${_tarname}"
   make \
