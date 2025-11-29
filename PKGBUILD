@@ -90,6 +90,16 @@ depends=(
   "coreutils"
   "libcrash-bash"
   "sed"
+  # Because there are
+  # packages which depend on
+  # videogame-launcher-create
+  # to build, which has been
+  # included up to a certain
+  # version, we are choosing
+  # to keep compatibility by
+  # requiring 'videogame-installer'.
+  # as a dependency.
+  "videogame-installer"
 )
 makedepends=(
   'make'
