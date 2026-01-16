@@ -65,8 +65,8 @@ if [[ "${_docs}" == "true" ]]; then
     "${pkgbase}-docs"
   )
 fi
-pkgver="0.0.0.0.0.0.0.0.0.0.1.1.1.1.1"
-_commit="ef08339f9107e2aea1ae25f606f23ed3e1af480f"
+pkgver="0.0.0.0.0.0.0.0.0.1.1"
+_commit="abf74902894a02ae61e07199244b42f46799833c"
 pkgrel=1
 _pkgdesc=(
   "Seamlessly launch videogames"
@@ -292,9 +292,12 @@ if [[ "${_offline}" == "true" ]]; then
   _url="file://${HOME}/${_pkg}"
   _tarname="${_pkg}"
 fi
-_archive_sum="0128158b6057aeceb794a5692dfac95fa044c4f37252bc116cbf9d087cc2077f"
-_archive_sig_sum="6dc64e983b73af29ee96f47ebc2fe1e6b96250cf9dad08c09d425196dd3c489d"
+_archive_sum="efef1aa54cf65be743331eb45a9c8c25ce33b8858354f3c0ff7ac132871c0a45"
+_archive_sig_sum="d2020db7f016fc96be5ae5d564766d447a18e043f1ab9f9be9498f1693ae72c3"
+# Dvorak
 _evmfs_ns="0x87003Bd6C074C713783df04f36517451fF34CBEf"
+# Truocolo
+_evmfs_ns="0x6E5163fC4BFc1511Dbe06bB605cc14a3e462332b"
 _evmfs_network="100"
 _evmfs_address="0x69470b18f8b8b5f92b48f6199dcb147b4be96571"
 _evmfs_archive_uri="evmfs://${_evmfs_network}/${_evmfs_address}/${_evmfs_ns}/${_archive_sum}"
@@ -404,7 +407,7 @@ package_videogame-launcher-docs() {
   install \
     -vDm644 \
     "COPYING" \
-    "${pkgdir}/usr/share/licenses/${pkgname}-docs"
+    "${pkgdir}/usr/share/licenses/${pkgname}"
 }
 
 # vim:set sw=2 sts=-1 et:
