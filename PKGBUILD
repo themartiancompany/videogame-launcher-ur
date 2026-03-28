@@ -295,8 +295,8 @@ if [[ "${_offline}" == "true" ]]; then
   _url="file://${HOME}/${_pkg}"
   _tarname="${_pkg}"
 fi
-_archive_sum="efef1aa54cf65be743331eb45a9c8c25ce33b8858354f3c0ff7ac132871c0a45"
-_archive_sig_sum="d2020db7f016fc96be5ae5d564766d447a18e043f1ab9f9be9498f1693ae72c3"
+_archive_sum="dfdd8a334c92489ca1e373a66b0189448ac820b7e77e9159470a210298f7fe0a"
+_archive_sig_sum="42350ec73fd1c7723e29bd5e37ca51729840b3096d906be51f50ca0b0a1e4556"
 # Dvorak
 _evmfs_ns="0x87003Bd6C074C713783df04f36517451fF34CBEf"
 # Truocolo
