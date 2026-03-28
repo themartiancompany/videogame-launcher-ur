@@ -70,7 +70,7 @@ if [[ "${_docs}" == "true" ]]; then
 fi
 pkgver="0.0.0.0.0.0.0.0.1"
 _commit="21055edb50027674205b0ef8cc54e95059605192"
-pkgrel=2
+pkgrel=3
 _pkgdesc=(
   "Seamlessly launch videogames"
   "with multiple backend."
@@ -295,8 +295,8 @@ if [[ "${_offline}" == "true" ]]; then
   _url="file://${HOME}/${_pkg}"
   _tarname="${_pkg}"
 fi
-_archive_sum="dfdd8a334c92489ca1e373a66b0189448ac820b7e77e9159470a210298f7fe0a"
-_archive_sig_sum="42350ec73fd1c7723e29bd5e37ca51729840b3096d906be51f50ca0b0a1e4556"
+_archive_sum="e132219c126df6af48710fb3695a38cec058acaa3e24b1e80af6164dbad4355c"
+_archive_sig_sum="bafbfa2d2c6767a02f31b451bcdc6329673e0e13f10d2add8872b5eb3e12265d"
 # Truocolo
 _evmfs_ns="0x6E5163fC4BFc1511Dbe06bB605cc14a3e462332b"
 # Dvorak
