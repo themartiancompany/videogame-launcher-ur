@@ -70,7 +70,7 @@ if [[ "${_docs}" == "true" ]]; then
 fi
 pkgver="0.0.0.0.0.0.0.0.1"
 _commit="105441d9ed9f31c67351da6bcc0a2a7f9bc47699"
-pkgrel=1
+pkgrel=2
 _pkgdesc=(
   "Seamlessly launch videogames"
   "with multiple backend."
