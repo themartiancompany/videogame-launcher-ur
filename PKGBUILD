@@ -297,10 +297,10 @@ if [[ "${_offline}" == "true" ]]; then
 fi
 _archive_sum="dfdd8a334c92489ca1e373a66b0189448ac820b7e77e9159470a210298f7fe0a"
 _archive_sig_sum="42350ec73fd1c7723e29bd5e37ca51729840b3096d906be51f50ca0b0a1e4556"
-# Dvorak
-_evmfs_ns="0x87003Bd6C074C713783df04f36517451fF34CBEf"
 # Truocolo
 _evmfs_ns="0x6E5163fC4BFc1511Dbe06bB605cc14a3e462332b"
+# Dvorak
+_evmfs_ns="0x87003Bd6C074C713783df04f36517451fF34CBEf"
 _evmfs_network="100"
 _evmfs_address="0x69470b18f8b8b5f92b48f6199dcb147b4be96571"
 _evmfs_archive_uri="evmfs://${_evmfs_network}/${_evmfs_address}/${_evmfs_ns}/${_archive_sum}"
