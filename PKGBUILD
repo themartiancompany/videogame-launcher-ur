@@ -1,23 +1,26 @@
 # SPDX-License-Identifier: AGPL-3.0
 
-#    ----------------------------------------------------------------------
-#    Copyright © 2024, 2025  Pellegrino Prevete
+#    ----------------------------------------------------------
+#    Copyright © 2024, 2025, 2026  Pellegrino Prevete
 #
 #    All rights reserved
-#    ----------------------------------------------------------------------
+#    ----------------------------------------------------------
 #
-#    This program is free software: you can redistribute it and/or modify
-#    it under the terms of the GNU Affero General Public License as published by
-#    the Free Software Foundation, either version 3 of the License, or
+#    This program is free software: you can redistribute it
+#    and/or modify it under the terms of the GNU Affero
+#    General Public License as published by the Free Software
+#    Foundation, either version 3 of the License, or
 #    (at your option) any later version.
 #
-#    This program is distributed in the hope that it will be useful,
-#    but WITHOUT ANY WARRANTY; without even the implied warranty of
-#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-#    GNU Affero General Public License for more details.
+#    This program is distributed in the hope that it will
+#    be useful, but WITHOUT ANY WARRANTY; without even the
+#    implied warranty of MERCHANTABILITY or FITNESS FOR A
+#    PARTICULAR PURPOSE. See the GNU Affero General
+#    Public License for more details.
 #
-#    You should have received a copy of the GNU Affero General Public License
-#    along with this program.  If not, see <https://www.gnu.org/licenses/>.
+#    You should have received a copy of the GNU Affero
+#    General Public License along with this program.
+#    If not, see <https://www.gnu.org/licenses/>.
 
 # Maintainer:
 #   Truocolo
@@ -27,7 +30,7 @@
 #     <pellegrinoprevete@gmail.com>
 #     <dvorak@0x87003Bd6C074C713783df04f36517451fF34CBEf>
 
-_evmfs_available="$( \
+_evmfs_available="$(
   command \
     -v \
     "evmfs" || \
@@ -51,7 +54,7 @@ fi
 if [[ ! -v "_offline" ]]; then
   _offline="false"
 fi
-_os="$( \
+_os="$(
   uname \
     -o)"
 _py="python"
@@ -65,8 +68,8 @@ if [[ "${_docs}" == "true" ]]; then
     "${pkgbase}-docs"
   )
 fi
-pkgver="0.0.0.0.0.0.0.0.0.1.1"
-_commit="abf74902894a02ae61e07199244b42f46799833c"
+pkgver="0.0.0.0.0.0.0.0.1"
+_commit="105441d9ed9f31c67351da6bcc0a2a7f9bc47699"
 pkgrel=1
 _pkgdesc=(
   "Seamlessly launch videogames"
