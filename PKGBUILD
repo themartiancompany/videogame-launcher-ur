@@ -68,8 +68,8 @@ if [[ "${_docs}" == "true" ]]; then
     "${pkgbase}-docs"
   )
 fi
-pkgver="0.0.0.0.0.0.0.0.1.1"
-_commit="320481bee81933b4cda10fe3213e5d21f802b21a"
+pkgver="0.0.0.0.0.0.0.0.1.1.1.1.1"
+_commit="aa9533a5500e14339826cd1bbec5687a457ed823"
 pkgrel=3
 _pkgdesc=(
   "Seamlessly launch videogames"
@@ -259,6 +259,16 @@ _snes9x_optdepends=(
     "System videogames"
     "with SNES9x."
 )
+_system7_mame_optdepends=(
+  "system7-mame:"
+    "Support for launching"
+    "System 7 videogames with MAME."
+)
+_system7_pce_optdepends=(
+  "system7-pce:"
+    "Support for launching"
+    "System 7 videogames with PCE."
+)
 optdepends+=(
   "${_cyberstorm_optdepends[*]}"
   "${_doomretro_optdepends[*]}"
@@ -284,6 +294,8 @@ optdepends+=(
   "${_retroarch_snes9x_optdepends[*]}"
   "${_scummvm_optdepends[*]}"
   "${_snes9x_optdepends[*]}"
+  "${_system7_mame_optdepends[*]}"
+  "${_system7_pce_optdepends[*]}"
 )
 source=()
 sha256sums=()
@@ -295,8 +307,8 @@ if [[ "${_offline}" == "true" ]]; then
   _url="file://${HOME}/${_pkg}"
   _tarname="${_pkg}"
 fi
-_archive_sum="e132219c126df6af48710fb3695a38cec058acaa3e24b1e80af6164dbad4355c"
-_archive_sig_sum="bafbfa2d2c6767a02f31b451bcdc6329673e0e13f10d2add8872b5eb3e12265d"
+_archive_sum="21a38ec7b443f13c0fd9bda4403962e93bd81345ee625610160e852cc47bd5cf"
+_archive_sig_sum="49ab21b839046517c3c27e4980fdecf475f615c2066d1a00a808c2dc13cd6cac"
 # Truocolo
 _evmfs_ns="0x6E5163fC4BFc1511Dbe06bB605cc14a3e462332b"
 # Dvorak
